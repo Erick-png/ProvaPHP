@@ -1,0 +1,14 @@
+----- criando banco de dados -----
+CREATE DATABASE system;
+----- ultilizando banco de dados criado -----
+use system;
+----- criando a tabela de banco de dados 'system' -----
+CREATE TABLE usuarios (
+  id int not null autoincrement primary key,
+  nome varchar(255) not null,
+  email varchar(255) not null,
+  senha varchar(255) not null,
+  nivel_acesso int not null
+);
+----- adicionando usuario admin na tabela 'usuarios' -----
+INSERT INTO (nome, email, senha, nivel_acesso) VALUES ('admin','admin@gmail.com','123456',1);
